@@ -172,3 +172,8 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+/research/*
+!/research/fractional_codes.ipynb
+!/research/visualizations/
+/artifacts/
+Dockerfile

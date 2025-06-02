@@ -1,0 +1,17 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+#uploadedImage {
+    border: 1px solid #e5e7eb;
+}
+
+#predictions li {
+    background-color: #f3f4f6;
+    padding: 8px;
+    border-radius: 4px;
+}
