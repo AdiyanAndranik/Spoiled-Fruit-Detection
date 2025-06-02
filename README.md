@@ -3,8 +3,8 @@
 ## Overview
 Spoiled Fruit Detection is a computer vision project that classifies fruits as **Fresh** or **Rotten** using a TensorFlow-based CNN, enhanced by fractional codes and the Potentials Method. A Flask web app provides real-time predictions, ideal for agricultural quality control.
 
-![Application Screenshot](images/app_image1.png)
-![Application Screenshot](images/app_image2.png)
+![Application Screenshot](app_images/app_image1.png)
+![Application Screenshot](app_images/app_image2.png)
 
 ## Features
 - Classifies fruits as Fresh or Rotten with high accuracy.
@@ -32,19 +32,24 @@ Spoiled Fruit Detection is a computer vision project that classifies fruits as *
 
 3. **Train Model**:
    ```bash
-   python train_model.py
+   python training_pipeline.py
    ```
 
 4. **Run Flask App**:
    ```bash
    python app.py
    ```
-   - Visit `http://localhost` to upload images.
+   - Visit `http://localhost:8080` to upload images.
+
+5. **Train the model (optional)**:
+   ```bash
+   http://localhost:8080/train
+   ```
 
 
 ## Usage
-- **Train**: Run `train_model.py` to train the model.
-- **Predict**: Use the Flask app to upload fruit images for classification.
+- **Train**: Visit `http://localhost:8080/train` to train the model via the Flask app, if needed.
+- **Predict**: Use the Flask app at `http://localhost:8080` to upload fruit images for classification.
 
 ## Dataset
 Uses a 2.1 GB dataset of fruit images (not included).
